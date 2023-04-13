@@ -17,14 +17,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Vet Clinic <a name="about-project"></a>
+# 📖 Clinic Database Diagram <a name="about-project"></a>
 
-**Vet Clinic** is a project to create data structure for a vet clinic using a relational database. It implements PostgreSQL and contains all the data about animals. The complete database contains tables with data about:
-    [] animals
-    [] animals' owners
-    [] vets
-    [] visits
-
+**Vet Clinic** is a project to create data structure for a clinic using a relational database. It implements PostgreSQL.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,8 +34,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Create a database to store animals' information
-- Insert some data into table, and query it
+- Create a database to store patients information
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,8 +52,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-git clone https://github.com/gealsanchez/vetclinicdb.git
-cd vet-clinic
+git clone https://github.com/gealsanchez/diagram-database.git
+cd clinic
 ```
 
 ### Create database
@@ -70,17 +64,17 @@ cd vet-clinic
 postgres=#
 ```
 
-2. Create the database `vet_clinic`
+2. Create the database `clinic`
 ```
-postgres=# CREATE DATABASE vet_clinic;
+postgres=# CREATE DATABASE clinic;
 CREATE DATABASE
 ```
 
 3. Connect to your database vet_clinic. Inside your current session do:
 ```
-postgres=# \c vet_clinic
+postgres=# \c clinic
 You are now connected to database "vet_clinic" as user "postgres".
-vet_clinic=#
+clinic=#
 ```
 
 That's it! Congratulations, you have created your database and connected to it. Next, we will add a table.
